@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="App" lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My AngularJS App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="app.css">
+  </head>
+  <body ng-controller="AppController">
+    <div class="header">
+    </div>
+    <div class="main">
+      <input type="text" ng-model="displayText">
+      <input type="button" value="Go" ng-click="onClick()">
+      <h1 class="a">初めまして</h1>
+      <p>{{text}}</p>
+      <div ng-repeat="name in names">
+        <span>{{name.firstName}}</span>
+        <span>{{name.lastName}}</span>
+      </div>
+      <h1 class="a" >2</h1>
+      <div class="table">
+        <table>
+          <tr>
+            <th>UramnOIL</th>
+            <th>うらむんオイル</th>
+            <th>テーブル</th>
+          </tr>
+          <tr>
+            <td>うんち</td>
+            <td>ちんちん</td>
+            <td>おっぱい</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <footer>
+    </footer>
+  </body>
+</html>
